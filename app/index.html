@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/libs.min.css">
     <link rel="stylesheet" href="css/style.min.css">
 </head>
@@ -18,36 +18,74 @@
         <div class="header__bottom"></div>
     </header>
 
-    <div class="breadcrumbs">
-        <div class="container">
-            <ul class="breadcrumbs__list">
-                <li class="breadcrumbs__list-item">
-                    <a href="#">Главная</a>
-                </li>
-                <li class="breadcrumbs__list-item">
-                    <a href="#">Мясные компании в Москве</a>
-                </li>
-                <li class="breadcrumbs__list-item">
-                    <span>Преображенский МПК, ООО</span>
-                </li>
-            </ul>
+
+    <div class="container">
+        <div class="content">
+
+            <div class="content__left">
+
+                <div class="breadcrumbs">
+                    <ul class="breadcrumbs__list">
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Главная</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <a href="#">Мясные компании в Москве</a>
+                        </li>
+                        <li class="breadcrumbs__list-item">
+                            <span>Преображенский МПК, ООО</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <section class="search">
+                    <form class="search__form">
+                        <input class="search__form-input" type="text" placeholder="Поиск по компаниям" required>
+                        <button class="search__form-button" type="submit">
+                            <img src="images/search.svg" alt="">
+                        </button>
+                    </form>
+                </section>
+
+                <section class="company__name">
+                    <a class="catalog__link text__link" href="#">К каталогу компаний</a>
+                    <h6 class="company__name-title">Преображенский МПК, ООО</h6>
+                    <div class="company__name-box">
+                        <div class="company__name-box__item">
+                            <span class="company__views">578 (+2)</span>
+                            <a class="company__feedback text__link" href="#">Оставить отзыв</a>
+                            <a class="company__stats text__link" href="#">Статистика</a>
+                            <a class="company__edit text__link" href="#">Редактировать компанию</a>
+                        </div>
+                        <div class="company__name-box__item">
+                            <a class="company__workers btn__link-green" href="#">Работаете в этой компании?</a>
+                            <!-- "status--request-sent status--worker" -->
+                        </div>
+                    </div>
+
+                
+
+                </section>
+
+
+
+
+
+            </div>
+
+            <div class="content__right promo__aside">
+                <div class="promo__aside-item">
+                    Реклама
+                    <img src="" alt="">
+                </div>
+                <div class="promo__aside-item">
+                    Реклама
+                    <img src="" alt="">
+                </div>
+            </div>
+
         </div>
     </div>
-
-    <section class="search">
-        <div class="container">
-            <form class="search__form">
-                <input class="search__form-input" type="text" placeholder="Поиск по компаниям" required>
-                <button class="search__form-button" type="submit">
-                    <img src="images/search.svg" alt="">
-                </button>
-            </form>
-        </div>
-    </section>
-
-
-
-
 
 
 

@@ -20,6 +20,36 @@
 }
 
 // end header
+
+// start content left and right (aside)
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.content__left {
+  width: 100%;
+}
+
+.promo__aside {
+  max-width: 160px;
+  margin-left: 20px;
+}
+
+.promo__aside-item {
+  width: 160px;
+  height: 320px;
+  background: #fafafa;
+  margin-bottom: 20px;
+
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: $grey;
+  padding: 130px 38px 160px;
+}
+
 // start breadcrumbs
 
 .breadcrumbs {
@@ -51,27 +81,25 @@
 // start searh section
 
 .search {
-    margin-bottom: 32px;
+  margin-bottom: 32px;
 }
 
 .search__form {
   display: flex;
   justify-content: space-between;
-  max-width: 940px;  
+  max-width: 940px;
   border: 2px solid $blue;
   border-radius: 3px;
 }
 
 .search__form-input {
-  font-size: 14px;
-  line-height: 20px;
   height: 40px;
   width: 100%;
   padding: 10px 12px;
   border: none;
   outline: none;
   &::placeholder {
-    color: #999999;
+    color: $grey;
   }
 }
 
@@ -83,15 +111,121 @@
   border: none;
   outline: none;
   cursor: pointer;
-  &:hover{
-    opacity: 0.8; 
-    transition: all .3s;
+  &:hover {
+    opacity: 0.8;
+    transition: all 0.3s;
   }
-  &:active{
+  &:active {
     opacity: 1;
   }
 }
 
 // end searh section
+// start company name section
+
+.company__name{
+    margin-bottom: 32px;
+}
+
+.catalog__link {
+  margin-bottom: 16px;
+  color: $blue;
+  padding-left: 20px;
+  margin-left: 5px;
+  position: relative;
+  &::before {
+    content: url(../images/arrow-link.svg);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.company__name-title {
+  margin-bottom: 8px;
+  padding-left: 30px;
+  margin-left: 2px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 32px;
+  color: $title;
+  position: relative;
+  &::before {
+    content: url(../images/check-company.svg);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.company__name-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company__name-box__item {
+  span,
+  a {
+    margin-right: 22px;
+  }
+}
+
+.company__views {
+  padding-left: 23px;
+  position: relative;
+  color: $grey;
+  &::before {
+    content: url(../images/views.svg);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.company__feedback {
+  padding-left: 24px;
+  position: relative;
+  &::before {
+    content: url(../images/feedback.svg);
+    position: absolute;
+    left: 0;
+  }
+}
+
+.company__stats {
+  padding-left: 22px;
+  position: relative;
+  &::before {
+    content: url(../images/stats.svg);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+  }
+}
+
+.company__edit {
+  padding-left: 22px;
+  position: relative;
+  &::before {
+    content: url(../images/edit.svg);
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+  }
+}
+
+.company__workers {
+  &.status--request-sent {
+    // сделать меняется текст на "Отменить запрос в сотрудники"
+  }
+  &.status--worker {
+    color: #fff;
+    background: $green;
+    // сделать меняется текст на "Я работаю в этой компании"
+    // сделать некликабельной
+  }
+}
+
+// end company name section
+//
+// end content left and right (aside)
 
 @import "_media";

@@ -1,24 +1,46 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *,
 *::before,
 *::after {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    display: inline-block;
+  text-decoration: none;
+  color: $grey;
+  display: inline-block;
+}
+
+a.text__link {
+  &:hover,
+  &:active {
+    text-decoration: underline;
+  }
+}
+
+a.btn__link-green {
+  padding: 10px 24px;
+  border: 1px solid $green;
+  border-radius: 3px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: $green;
+  transition: all .5s;
+  &:hover{
+      color: #fff;
+      background: $green;      
+  }
 }
 
 ul,
 li {
-    margin: 0;
-    padding: 0;
-    list-style: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 h1,
@@ -27,22 +49,25 @@ h3,
 h4,
 h5,
 h6 {
-    margin: 0;
+  margin: 0;
 }
 
 p {
-    margin: 0;
+  margin: 0;
 }
 
 body {
-    // overflow-x: hidden;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
-    min-width: 320px;
+  // overflow-x: hidden;
+  font-family: "Roboto", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  min-width: 320px;
+  color: $text;
 }
 
 .container {
-    max-width: 1366px;
-    padding: 0 33px;
-    margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 33px;
+  margin: 0 auto;
 }
